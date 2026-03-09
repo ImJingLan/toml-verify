@@ -1,0 +1,11 @@
+# Test file with missing comma in array
+title = "Missing Comma Test"
+
+[database]
+servers = [
+  "server1.example.com"
+  "server2.example.com"
+  "server3.example.com"
+]
+
+# This should fail validation because there's no comma between the strings

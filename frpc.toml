@@ -1,0 +1,66 @@
+serverAddr = "43.136.135.172"
+serverPort = 7000
+
+[auth]
+token = "stcfo2YcPPNma3xVT$Uu"
+
+[[proxies]]
+name = "SSH_Remote"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 13122
+
+[[proxies]]
+name = "DSM_http"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 80
+customDomains = [
+  "app.yurik.cafe",
+  "dsm.yurik.cafe",
+  "vaultwarden.yurik.cafe",
+  "bark.yurik.cafe",
+  "git.yurik.cafe",
+  "passkey.yurik.cafe",
+  "code-tokenissaomadasaoma.yurik.cafe"
+]
+
+[[proxies]]
+name = "DSM_https"
+type = "https"
+localIP = "127.0.0.1"
+localPort = 443
+customDomains = [
+  "app.yurik.cafe",
+  "dsm.yurik.cafe",
+  "vaultwarden.yurik.cafe",
+  "bark.yurik.cafe",
+  "git.yurik.cafe",
+  "passkey.yurik.cafe"
+  "code-tokenissaomadasaoma.yurik.cafe"
+]
+
+[[proxies]]
+name = "Web_http"
+type = "http"
+localIP = "127.0.0.1"
+localPort = 80
+customDomains = [
+  "yurik.cafe",
+  "www.yurik.cafe",
+  "wiki.yurik.cafe",
+  "ori.yurik.cafe"
+]
+
+[[proxies]]
+name = "Web_https"
+type = "https"
+localIP = "127.0.0.1"
+localPort = 443
+customDomains = [
+  "yurik.cafe",
+  "www.yurik.cafe",
+  "wiki.yurik.cafe",
+  "ori.yurik.cafe"
+]
