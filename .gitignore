@@ -21,9 +21,9 @@ dist/
 Thumbs.db
 
 # Test files (optional - comment out if you want to keep them)
-# test_*.toml
-# example_*.toml
-# frpc.toml
+test_*.toml
+example_*.toml
+frpc.toml
 
 # Keep important test files
 !example_valid.toml
